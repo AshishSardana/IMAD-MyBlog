@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\ashish.sardana\.android\build-cache\6d1dad9319876d11dee23db2a29dab436a02a7bf\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7801a3c3be74e0cb2062ccf8c4dd8f9b4c10503c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\ashish.sardana\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
         jumboMode="true"
         optimize="true"
@@ -54,6 +63,15 @@
         revision="25.0.2"
         sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
         <dex dex="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1c196ad2dc2af31c065e8b84b3a19b7d5c28fdfb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ashish.sardana\.android\build-cache\21dffcb0fcab94cb83dabe4fae950a8c5a603bb7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f53513264f545d92f9c67d857c639008644e497a\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -151,7 +169,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e1e0951562948999c7bc2e2379a841fa70372404">
+        sha1="a6f96f3665abb624965b902c4add27dde4905a99">
         <dex dex="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_e6156a1f34726972b87c2ba85b202486cbf938f8\classes.dex" />
     </item>
     <item

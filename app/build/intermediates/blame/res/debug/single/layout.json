@@ -64,6 +64,10 @@
         "source": "C:\\Users\\ashish.sardana\\.android\\build-cache\\994b5194fd0a55a12b484321ef8c724f7e29b8f6\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
+        "merged": "C:\\Users\\ashish.sardana\\Documents\\Android Projects\\IMAD\\MyBlog\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_article_list.xml",
+        "source": "C:\\Users\\ashish.sardana\\Documents\\Android Projects\\IMAD\\MyBlog\\app\\src\\main\\res\\layout\\activity_article_list.xml"
+    },
+    {
         "merged": "C:\\Users\\ashish.sardana\\Documents\\Android Projects\\IMAD\\MyBlog\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
         "source": "C:\\Users\\ashish.sardana\\.android\\build-cache\\994b5194fd0a55a12b484321ef8c724f7e29b8f6\\output\\res\\layout\\notification_template_custom_big.xml"
     },
@@ -94,6 +98,10 @@
     {
         "merged": "C:\\Users\\ashish.sardana\\Documents\\Android Projects\\IMAD\\MyBlog\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\ashish.sardana\\.android\\build-cache\\994b5194fd0a55a12b484321ef8c724f7e29b8f6\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ashish.sardana\\Documents\\Android Projects\\IMAD\\MyBlog\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_article.xml",
+        "source": "C:\\Users\\ashish.sardana\\Documents\\Android Projects\\IMAD\\MyBlog\\app\\src\\main\\res\\layout\\layout_article.xml"
     },
     {
         "merged": "C:\\Users\\ashish.sardana\\Documents\\Android Projects\\IMAD\\MyBlog\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",

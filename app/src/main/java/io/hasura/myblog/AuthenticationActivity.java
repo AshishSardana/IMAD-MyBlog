@@ -2,10 +2,12 @@ package io.hasura.myblog;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,6 +21,8 @@ import java.io.IOException;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
+import static android.R.attr.start;
 
 public class AuthenticationActivity extends AppCompatActivity {
 
@@ -78,9 +82,10 @@ public class AuthenticationActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<MessageResponse> call, Response<MessageResponse> response) {
                     showProgressDialog(false);
-                    //Checks if the status code of the response in between 200-300
+                    //Checks if the status code of the response is in between 200-300
                     if (response.isSuccessful()) {
-                        showAlert("Welcome", response.body().getMessage());
+                        //showAlert("Welcome", response.body().getMessage());
+                        navigateToArticleListActivity();
                     } else {
                         //If the username/password is incorrect
                         //Convert the response into ErrorResponse body
@@ -91,17 +96,20 @@ public class AuthenticationActivity extends AppCompatActivity {
                                 showAlert("SignIn Failed", errorResponse.getError());
                             } catch (JsonSyntaxException jsonException) {
                                 jsonException.printStackTrace();
-                                showAlert("SignIn Failed", "Something went wrong");
+                                showAlert("SignIn Failed", "Something went wrong_1");
                             }
                         } catch (IOException e) {
                             e.printStackTrace();
-                            showAlert("SignIn Failed", "Something went wrong");
+                            showAlert("SignIn Failed", "Something went wrong_2");
                         }
                     }
                 }
+                //Called when the request has failed due to problems like "No Internet Connection"
                 @Override
                 public void onFailure (Call < MessageResponse > call, Throwable t){
-                   showAlert("SignIn Failed", "Something went wrong");
+                    showProgressDialog(false);
+                    Log.i("AuthenticationActivity", "Sign In has failed inside onfailure");
+                   showAlert("SignIn Failed", "Something went wrong onFailure");
                 }
             });
     }
@@ -134,9 +142,9 @@ public class AuthenticationActivity extends AppCompatActivity {
                     }
                 }
             }
-            //Called when problems like "No Internet Connection" is encountered
             @Override
             public void onFailure (Call < MessageResponse > call, Throwable t){
+                showProgressDialog(false);
                 showAlert("Registration Failed", "Something went wrong onFailure.");
             }
         });
@@ -197,5 +205,10 @@ public class AuthenticationActivity extends AppCompatActivity {
             }
             return username.contentEquals(mockUsername) && password.contentEquals(mockPassword);
         }
+
+    }
+    private void navigateToArticleListActivity(){
+        Intent intent = new Intent(this, ArticleListActivity.class);
+        startActivity(intent);
     }
 }

@@ -28,6 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="io.hasura.myblog.ArticleListActivity" />
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

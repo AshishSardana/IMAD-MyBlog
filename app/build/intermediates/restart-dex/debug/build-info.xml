@@ -6,22 +6,22 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.1"
-    timestamp="1492331021746"
+    timestamp="1492362498232"
     token="-425455965464586072"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="477" />
+        duration="1154" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="26" />
+        duration="27" />
     <task
         name="verifier"
-        duration="9" />
+        duration="8" />
 
     <artifact
         location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -32,19 +32,13 @@
 
     <build
         build-mode="FULL"
-        timestamp="1492320312844"
+        timestamp="1492335130646"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
-        <artifact
             location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -68,20 +62,41 @@
             location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1492330727297"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1492331021746"
+        timestamp="1492362115192"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1492362498232"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
