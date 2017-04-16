@@ -1,4 +1,4 @@
-#Tue Apr 11 09:24:18 IST 2017
+#Sun Apr 16 13:38:16 IST 2017
 base.0=C\:\\Users\\ashish.sardana\\Documents\\Android Projects\\IMAD\\MyBlog\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_e6156a1f34726972b87c2ba85b202486cbf938f8
 renamed.1=classes.dex
 renamed.0=classes2.dex

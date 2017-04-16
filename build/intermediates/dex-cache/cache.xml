@@ -30,6 +30,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\ashish.sardana\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.7_77a972fc99651f1110fbcd9c1d3f39f57bb9c39b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\ashish.sardana\.android\build-cache\7bfbb692376812579b7fe9ecca8277505ebf0587\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -93,6 +102,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\ashish.sardana\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.2.0\a09926806199499a20b2f5168779499abfa33342\converter-gson-2.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a09926806199499a20b2f5168779499abfa33342">
+        <dex dex="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.2.0_2eb87699df08f31fe965b93300df7c2bbca1917f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\ashish.sardana\.android\build-cache\2af9d57020cae565c8406321d20d8d63deb462da\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -111,12 +129,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\ashish.sardana\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.6.0_d633e4ee7d36d0e8f2766b353ac77805a4dd9f87\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ashish.sardana\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.11.0\840897fcd7223a8143f1d9b6f69714e7be34fd50\okio-1.11.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.11.0_c6583104a84dbdae14fc45451744f26c25a3540e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="f78e8a6527d4899d342f85f486f7d283377593f5">
+        sha1="e1e0951562948999c7bc2e2379a841fa70372404">
         <dex dex="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_e6156a1f34726972b87c2ba85b202486cbf938f8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ashish.sardana\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\logging-interceptor\3.4.1\381fc1096ba65040d8e80ea43b2e1d9bad02345e\logging-interceptor-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="381fc1096ba65040d8e80ea43b2e1d9bad02345e">
+        <dex dex="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\logging-interceptor-3.4.1_75cac7e64e4cd7b3312ec8db6098cebfc26e26c5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ashish.sardana\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.2.0\41e67dba73c3347e4503761642c39d0e06ca1f2\retrofit-2.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="041e67dba73c3347e4503761642c39d0e06ca1f2">
+        <dex dex="C:\Users\ashish.sardana\Documents\Android Projects\IMAD\MyBlog\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.2.0_3e5af289139249d380d2005896f3c80a49d3a271\classes.dex" />
     </item>
     <item
         is-multidex="true"

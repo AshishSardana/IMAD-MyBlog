@@ -9,8 +9,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
+
+import java.io.IOException;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class AuthenticationActivity extends AppCompatActivity {
 
@@ -62,11 +70,76 @@ public class AuthenticationActivity extends AppCompatActivity {
 
     private void performSignIn() {
         //Mock an API call to sign in.
-        new SignInTask().execute(username.getText().toString(), password.getText().toString());
+        //new SignInTask().execute(username.getText().toString(), password.getText().toString());
+
+        showProgressDialog(true);
+        ApiManager.getApiInterface().login(new AuthenticationRequest(username.getText().toString().trim(), password.getText().toString().trim()))
+            .enqueue(new Callback<MessageResponse>() {
+                @Override
+                public void onResponse(Call<MessageResponse> call, Response<MessageResponse> response) {
+                    showProgressDialog(false);
+                    //Checks if the status code of the response in between 200-300
+                    if (response.isSuccessful()) {
+                        showAlert("Welcome", response.body().getMessage());
+                    } else {
+                        //If the username/password is incorrect
+                        //Convert the response into ErrorResponse body
+                        try {
+                            String errorMessage = response.errorBody().string();
+                            try {
+                                ErrorResponse errorResponse = new Gson().fromJson(errorMessage, ErrorResponse.class);
+                                showAlert("SignIn Failed", errorResponse.getError());
+                            } catch (JsonSyntaxException jsonException) {
+                                jsonException.printStackTrace();
+                                showAlert("SignIn Failed", "Something went wrong");
+                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                            showAlert("SignIn Failed", "Something went wrong");
+                        }
+                    }
+                }
+                @Override
+                public void onFailure (Call < MessageResponse > call, Throwable t){
+                   showAlert("SignIn Failed", "Something went wrong");
+                }
+            });
     }
 
     private void performRegistration() {
-
+        showProgressDialog(true);
+        ApiManager.getApiInterface().registration(new AuthenticationRequest(username.getText().toString().trim(), password.getText().toString().trim()))
+            .enqueue(new Callback<MessageResponse>() {
+            @Override
+            public void onResponse(Call<MessageResponse> call, Response<MessageResponse> response) {
+                showProgressDialog(false);
+                //Checks if the status code of the response is in between 200-300
+                if (response.isSuccessful()) {
+                    showAlert("Welcome", response.body().getMessage());
+                } else {
+                    //If the username/password is incorrect
+                    //Convert the response into ErrorResponse body
+                    try {
+                        String errorMessage = response.errorBody().string();
+                        try {
+                            ErrorResponse errorResponse = new Gson().fromJson(errorMessage, ErrorResponse.class);
+                            showAlert("Registration Failed", errorResponse.getError());
+                        } catch (JsonSyntaxException jsonException) {
+                            jsonException.printStackTrace();
+                            showAlert("Registration Failed", "Something went wrong_1");
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                        showAlert("Registration Failed", "Something went wrong_2");
+                    }
+                }
+            }
+            //Called when problems like "No Internet Connection" is encountered
+            @Override
+            public void onFailure (Call < MessageResponse > call, Throwable t){
+                showAlert("Registration Failed", "Something went wrong onFailure.");
+            }
+        });
     }
 
     private void showProgressDialog(Boolean shouldShow) {
